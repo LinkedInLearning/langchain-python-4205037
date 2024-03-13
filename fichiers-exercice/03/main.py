@@ -177,7 +177,7 @@ def ask():
     """Poser une question à l'IA."""
     while True:
 
-        user_input = input("Topic: ")
+        user_input = input("Q: ")
         # Exit
         if user_input == "x":
             start()
