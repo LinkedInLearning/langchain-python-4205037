@@ -3,3 +3,5 @@ node_modules
 .tmp
 npm-debug.log
 .env
+env/
+__pycache__/

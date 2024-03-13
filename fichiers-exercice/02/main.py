@@ -7,6 +7,14 @@ from colorama import Fore
 
 load_dotenv()
 
-model = ChatOpenAI(model="gpt-3.5-turbo", api_key)
-response = model.invoke("Tell me a short joke about horses")
-print(response) 
+def format_response(result):
+    print(Fore.GREEN + result.content + Fore.RESET)
+
+prompt = ChatPromptTemplate.from_template(
+    "Tell me a short joke about {topic}"
+)
+model = ChatOpenAI(model="gpt-3.5-turbo")
+
+chain = prompt | model | format_response    
+
+chain.invoke({"topic": "chickens"})
