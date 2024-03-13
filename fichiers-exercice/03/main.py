@@ -78,9 +78,15 @@ def query(query):
 def start():
     print("MENU")
     print("====")
-    print("[1]- Ask a question")
-    print("[2]- Exit")
-    choice = input("Enter your choice: ")
+
+    instructions = (
+        "Taper'x' pour retourner au MENU MAIN.\n"
+    )
+    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
+
+    print("[1]- Poser une question à l'IA")
+    print("[2]- Quitter")
+    choice = input("Selection: ")
     if choice == "1":
         ask()
     elif choice == "2":
@@ -92,24 +98,16 @@ def start():
 
 def ask():
     """Poser une question à l'IA."""
-
-    instructions = (
-        "Taper'x' pour retourner au MENU MAIN.\n"
-    )
-    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
     while True:
 
-        user_input = input("Q: ")
+        user_input = input("Topic: ")
         # Exit
         if user_input == "x":
             start()
         else:
             # Generate a response
-            
+            pass
 
 
 if __name__ == "__main__":
     start()
-
-
-print(response)
