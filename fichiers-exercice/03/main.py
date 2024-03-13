@@ -53,19 +53,27 @@ def load_embeddings(documents, user_query):
     """Create a vector store from a set of documents."""
     db = Chroma.from_documents(documents, OpenAIEmbeddings())
     docs = db.similarity_search(user_query)
-    print(docs)
+    # print(docs)
     return db.as_retriever()
 
 
 def generate_response(retriever, query):
     """Generate a response to a user query."""
-    pass
+    chain = (
+        {"context": retriever, "question": RunnablePassthrough()}
+        | chat_prompt_template
+        | model
+        | StrOutputParser()
+    )
+    return chain.invoke(query)
 
 
 def query(query):
     """Load documents, create a vector store, and generate a response to a user query."""
     documents = load_documents()
     retriever = load_embeddings(documents, query)
+    response = generate_response(retriever, query)
+    print(Fore.GREEN + response)
 
 
-query("What is the capital of France?")
+query("Quelles sont les horaires d'ouverture ?")
