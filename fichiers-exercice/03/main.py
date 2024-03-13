@@ -45,7 +45,7 @@ def load_documents():
     
     documents = loader.load()
     chunks = text_splitter.split_documents(documents)
-    print(f"You have {len(documents)} documents and {len(chunks)} chunks.")
+    # print(f"You have {len(documents)} documents and {len(chunks)} chunks.")
     return chunks
 
 
@@ -99,14 +99,15 @@ def start():
 def ask():
     """Poser une question à l'IA."""
     while True:
-
-        user_input = input("Topic: ")
+        user_input = input("Q: ")
         # Exit
         if user_input == "x":
             start()
         else:
             # Generate a response
-            pass
+            response = query(user_input)
+            print(Fore.BLUE + "A: " + response + Fore.RESET)
+            print("\n ------------------------------------")
 
 
 if __name__ == "__main__":
