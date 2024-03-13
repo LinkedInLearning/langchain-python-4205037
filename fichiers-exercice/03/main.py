@@ -40,7 +40,12 @@ model = ChatOpenAI()
 
 def load_documents():
     """Load a file from path, split it into chunks, embed each chunk and load it into the vector store."""
-    pass
+    loader = TextLoader("./docs/faq_fr.txt")
+    text_splitter = CharacterTextSplitter(chunk_size=100, chunk_overlap=0)
+    
+    documents = loader.load()
+    chunks = text_splitter.split_documents(documents)
+    print(f"You have {len(documents)} documents and {len(chunks)} chunks.")
 
 
 def load_embeddings(documents, user_query):
@@ -55,4 +60,7 @@ def generate_response(retriever, query):
 
 def query(query):
     """Load documents, create a vector store, and generate a response to a user query."""
-    pass
+    load_documents()
+
+
+query("What is the capital of France?")
