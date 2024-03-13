@@ -22,6 +22,10 @@ def invoke(input):
 
 
 def start():
+    instructions = (
+        "Taper'x' pour retourner au MENU MAIN.\n"
+    )
+    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
     print("MENU")
     print("====")
     print("[1]- Raconter une histoire drôle")
@@ -38,11 +42,6 @@ def start():
 
 def ask():
     """Poser une question à l'IA."""
-
-    instructions = (
-        "Taper'x' pour retourner au MENU MAIN.\n"
-    )
-    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
     while True:
 
         user_input = input("Topic: ")
