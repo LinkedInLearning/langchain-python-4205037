@@ -16,7 +16,7 @@ def invoke(input):
     )
     model = ChatOpenAI(model="gpt-3.5-turbo")
 
-    chain = prompt | model | format_response    
+    chain = prompt | model | StrOutputParser()
 
     return chain.invoke({"topic": input})
 
@@ -24,6 +24,12 @@ def invoke(input):
 def start():
     print("MENU")
     print("====")
+
+    instructions = (
+        "Taper'x' pour retourner au MENU MAIN.\n"
+    )
+    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
+
     print("[1]- Raconter une histoire drôle")
     print("[2]- Quitter")
     choice = input("Selection: ")
@@ -38,11 +44,6 @@ def start():
 
 def ask():
     """Poser une question à l'IA."""
-
-    instructions = (
-        "Taper'x' pour retourner au MENU MAIN.\n"
-    )
-    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
     while True:
 
         user_input = input("Topic: ")
@@ -51,7 +52,8 @@ def ask():
             start()
         else:
             # Generate a response
-            invoke(user_input)
+            response = invoke(user_input)
+            print(Fore.GREEN + response + Fore.RESET)
          
 
 
