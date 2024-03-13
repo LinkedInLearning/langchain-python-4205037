@@ -72,8 +72,44 @@ def query(query):
     """Load documents, create a vector store, and generate a response to a user query."""
     documents = load_documents()
     retriever = load_embeddings(documents, query)
-    response = generate_response(retriever, query)
-    print(Fore.GREEN + response)
+    return generate_response(retriever, query)
 
 
-query("Quelles sont les horaires d'ouverture ?")
+def start():
+    print("MENU")
+    print("====")
+    print("[1]- Ask a question")
+    print("[2]- Exit")
+    choice = input("Enter your choice: ")
+    if choice == "1":
+        ask()
+    elif choice == "2":
+        exit()
+    else:
+        print("Invalid choice")
+        start()
+
+
+def ask():
+    """Poser une question à l'IA."""
+
+    instructions = (
+        "Taper'x' pour retourner au MENU MAIN.\n"
+    )
+    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
+    while True:
+
+        user_input = input("Q: ")
+        # Exit
+        if user_input == "x":
+            start()
+        else:
+            # Generate a response
+            
+
+
+if __name__ == "__main__":
+    start()
+
+
+print(response)
