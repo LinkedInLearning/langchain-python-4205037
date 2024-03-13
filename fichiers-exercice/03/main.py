@@ -18,13 +18,12 @@ from colorama import Fore
 
 load_dotenv()
 
-# https://python.langchain.com/docs/modules/data_connection/vectorstores/
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-LANGUAGE_MODEL = "gpt-3.5-turbo-instruct"
+LANGUAGE_MODEL = "gpt-3.5-turbo"
 
 template: str = """/
-Vous êtes un spécialiste du support client. Vous assistez les utilisateurs avec des demandes générales basées sur {contexte} et des problèmes techniques. /
+Vous êtes un spécialiste du support client. Vous assistez les utilisateurs avec des demandes générales basées sur {context} et des problèmes techniques. /
 Si vous ne connaissez pas la réponse, vous invitez l'utilisateur à joindre le service support au téléphone ou par mail 
 """
 

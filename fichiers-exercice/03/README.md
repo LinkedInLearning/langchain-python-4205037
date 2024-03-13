@@ -49,7 +49,7 @@ use pip3 on a Mac or Linux and pip on Windows
 
 ```
 pip install -r requirements.txt
-pip install --upgrade langchain
+pip install -r requirements.txt --no-cache-dir (to install without caching)
 ```
 
 ## [Get an API key](https://platform.openai.com/account/api-keys)
