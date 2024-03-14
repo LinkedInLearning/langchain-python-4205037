@@ -27,6 +27,12 @@ add_routes(
     path="/chat",
 )
 
+add_routes(
+    app,
+    prompt | model,
+    path="/generate",
+)
+
 if __name__ == "__main__":
     config = uvicorn.Config("main:app", port=5000, log_level="info")
     server = uvicorn.Server(config)
