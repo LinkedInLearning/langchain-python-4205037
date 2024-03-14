@@ -13,7 +13,11 @@ model = ChatOpenAI()
 prompt = ChatPromptTemplate.from_template("tell me a joke about {topic}")
 
 # créer un serveur API avec FastAPI
-
+app = FastAPI(
+    title="LangChain Server",
+    version="1.0",
+    description="A simple api server using Langchain's Runnable interfaces",
+)
 
 # ajouter des routes pour les modèles de chat
 
