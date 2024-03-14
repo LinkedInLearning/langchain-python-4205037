@@ -20,8 +20,14 @@ app = FastAPI(
 )
 
 # ajouter des routes pour les modèles de chat
-
-
+# lancer 'pip install pydantic==1.10.13' pour accéder /docs
+add_routes(
+    app,
+    model,
+    path="/chat",
+)
 
 if __name__ == "__main__":
-    pass
+    config = uvicorn.Config("main:app", port=5000, log_level="info")
+    server = uvicorn.Server(config)
+    server.run()

@@ -1,7 +1,7 @@
 ## 💻 Project :Publier avec LangServe et créer une API REST 
 
 
-## 🛠️ Prérequis : Installation & Setup
+## 🛠️ Requirements : Installation & Setup
 
 ### Python 3.10.0
 
@@ -63,6 +63,7 @@ OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
 
 ### Installer serveur [uvicorn ASGI server](https://www.uvicorn.org/)
 `pip install "uvicorn[standard]"`
+`pip install pydantic==1.10.13` pour accéder à la docs
 
 ## Démarrer le serveur :
 `uvicorn main:app --reload`
