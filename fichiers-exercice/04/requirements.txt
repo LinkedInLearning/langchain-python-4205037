@@ -11,5 +11,4 @@ tiktoken==0.5.2
 langserve==0.0.39
 langsmith==0.0.83
 uvicorn==0.26.0
-
-
+sse-starlette==1.8.2

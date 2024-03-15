@@ -66,11 +66,17 @@ OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
 `pip install pydantic==1.10.13` pour accéder à la docs
 
 ## Démarrer le serveur :
-`uvicorn main:app --reload`
+`uvicorn main:app --reload --port 0.0.0.0`
 `python main.py`
 
 ## openai.error.APIConnectionError:[Error communicating with OpenAI](https://stackoverflow.com/questions/75920597/openai-error-apiconnectionerror-error-communicating-with-openai)
 
 `bash /Applications/Python*/Install\ Certificates.command`
 
-## Déployer to [Render](https://docs.render.com/deploy-fastapi)
+## Déployer to [Render](https://docs.render.com/)
+
+### Build Command 
+`pip install -r requirements.txt`
+
+### Start Command 
+`uvicorn main:app --host 0.0.0.0`
