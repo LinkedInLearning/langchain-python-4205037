@@ -1,10 +1,10 @@
-# Nom final de la formation
+# L’essentiel de Langchain pour le développement en Python
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L’essentiel de Langchain pour le développement en Python`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Si vous êtes développeur Python, alors suivez cette formation sur le framework LangChain. Sandy Ludosky vous présente LangChain et ses composants, les prérequis et l'installation des fichiers d'exercice. Vous aborderez son interface et son intégration avec OpenAI, vous utiliserez le langage d'expression LangChain (LCEL), et créerez des chaînes de composants avec des templates prompts. Vous développerez un super agent et un support client en définissant le RAG, en fragmentant les documents, en créant un vector store (ChromaDB), en générant du contenu et des réponses (FAQ). Puis, vous apprendrez à publier avec LangServe, à créer une API REST avec FastAPI, à déployer avec Render et GitHub.		
 
 ## Instructions
 
@@ -34,6 +34,6 @@ La branche master correspond au code à la fin de la formation.
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com
 [lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/sandy-ludosky
 
 [1]: # (End of FR-Instruction ###############################################################################################)
