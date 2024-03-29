@@ -2,7 +2,7 @@
 
 Ce dossier Repository est lié au cours `L’essentiel de Langchain pour le développement en Python`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
-![Nom final de la formation][lil-thumbnail-url] 
+![L’essentiel de Langchain pour le développement en Python][lil-thumbnail-url] 
 
 Si vous êtes développeur Python, alors suivez cette formation sur le framework LangChain. Sandy Ludosky vous présente LangChain et ses composants, les prérequis et l'installation des fichiers d'exercice. Vous aborderez son interface et son intégration avec OpenAI, vous utiliserez le langage d'expression LangChain (LCEL), et créerez des chaînes de composants avec des templates prompts. Vous développerez un super agent et un support client en définissant le RAG, en fragmentant les documents, en créant un vector store (ChromaDB), en générant du contenu et des réponses (FAQ). Puis, vous apprendrez à publier avec LangServe, à créer une API REST avec FastAPI, à déployer avec Render et GitHub.		
 
@@ -20,9 +20,10 @@ La branche master correspond au code à la fin de la formation.
 ## Installation
 
 1. Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-   - [Liste des logiciels/dépendances utiles à la formation] 
+* Python version ≥ 3.8.1 
+* [Visual Studio Code](https://code.visualstudio.com/) 
+* Créer un compte sur [OpenAI](https://openai.com/)
 2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-3. [Instructions spécifiques au cours] 
 
 
 ### Formateur
