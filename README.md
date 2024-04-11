@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours `L’essentiel de Langchain pour le dév
 
 ![L’essentiel de Langchain pour le développement en Python][lil-thumbnail-url] 
 
-Si vous êtes développeur Python, alors suivez cette formation sur le framework LangChain. Sandy Ludosky vous présente LangChain et ses composants, les prérequis et l'installation des fichiers d'exercice. Vous aborderez son interface et son intégration avec OpenAI, vous utiliserez le langage d'expression LangChain (LCEL), et créerez des chaînes de composants avec des templates prompts. Vous développerez un super agent et un support client en définissant le RAG, en fragmentant les documents, en créant un vector store (ChromaDB), en générant du contenu et des réponses (FAQ). Puis, vous apprendrez à publier avec LangServe, à créer une API REST avec FastAPI, à déployer avec Render et GitHub.		
+Si vous êtes développeur Python, alors suivez cette formation sur le framework LangChain. Sandy Ludosky vous présente LangChain et ses composants, les prérequis et l'installation des fichiers d'exercice. Vous aborderez son interface et son intégration avec OpenAI, vous utiliserez le langage d'expression LangChain (LCEL), et créerez des chaînes de composants avec des templates prompts. Vous développerez un super agent et un support client en définissant le RAG, en fragmentant les documents, en créant un vector store (ChromaDB), en générant du contenu et des réponses (FAQ). Puis, vous apprendrez à publier avec LangServe, à créer une API REST avec FastAPI, à déployer avec Render et GitHub.
 
 ## Instructions
 
