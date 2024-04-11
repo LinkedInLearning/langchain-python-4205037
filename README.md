@@ -34,7 +34,7 @@ La branche master correspond au code à la fin de la formation.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQE2aPJXLbRAjQ/learning-public-crop_675_1200/0/1712834217678?e=2147483647&v=beta&t=B2OKZeq8_ECzT5Vs_RAULz1dSerlDwWtruZFWK6GWKk
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/sandy-ludosky
 
 [1]: # (End of FR-Instruction ###############################################################################################)
