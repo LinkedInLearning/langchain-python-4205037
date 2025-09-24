@@ -6,6 +6,8 @@ Ce dossier Repository est lié au cours `L’essentiel de Langchain pour le dév
 
 Si vous êtes développeur Python, alors suivez cette formation sur le framework LangChain. Sandy Ludosky vous présente LangChain et ses composants, les prérequis et l'installation des fichiers d'exercice. Vous aborderez son interface et son intégration avec OpenAI, vous utiliserez le langage d'expression LangChain (LCEL), et créerez des chaînes de composants avec des templates prompts. Vous développerez un super agent et un support client en définissant le RAG, en fragmentant les documents, en créant un vector store (ChromaDB), en générant du contenu et des réponses (FAQ). Puis, vous apprendrez à publier avec LangServe, à créer une API REST avec FastAPI, à déployer avec Render et GitHub.
 
+La meilleure façon d'apprendre un langage est de l'utiliser dans la pratique. C'est pourquoi ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. 
+
 ## Instructions
 
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
